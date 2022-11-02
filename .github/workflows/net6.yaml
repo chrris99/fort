@@ -26,4 +26,4 @@ jobs:
         run: dotnet build $SOLUTION --configuration $BUILD_CONFIG
 
       - name: Test
-        run: dotnet tets $SOLUTION
+        run: dotnet test $SOLUTION
