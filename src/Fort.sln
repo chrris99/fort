@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fort.Api", "Fort.Api\Fort.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fort.Core", "Fort.Core\Fort.Core.csproj", "{5D904459-0E87-45F2-83F6-24043AAD21FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fort.Application", "Fort.Application\Fort.Application.csproj", "{8E719D57-1DE2-431B-A11D-1D77D452814D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +24,5 @@ Global
 		{5D904459-0E87-45F2-83F6-24043AAD21FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D904459-0E87-45F2-83F6-24043AAD21FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D904459-0E87-45F2-83F6-24043AAD21FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8E719D57-1DE2-431B-A11D-1D77D452814D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E719D57-1DE2-431B-A11D-1D77D452814D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E719D57-1DE2-431B-A11D-1D77D452814D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E719D57-1DE2-431B-A11D-1D77D452814D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
