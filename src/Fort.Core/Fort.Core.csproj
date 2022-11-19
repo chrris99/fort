@@ -10,8 +10,4 @@
       <ProjectReference Include="..\Fort.Api\Fort.Api.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Mediator" />
-    </ItemGroup>
-
 </Project>
