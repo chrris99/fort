@@ -1,4 +1,4 @@
-﻿namespace Fort.Core;
+﻿namespace Fort.Domain.ErrorHandling;
 
 /// <summary>
 /// Represents the result of an operation with status information and possibly an error.

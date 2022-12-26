@@ -1,4 +1,4 @@
-﻿namespace Fort.Core.Exceptions;
+﻿namespace Fort.Domain.ErrorHandling;
 
 /// <summary>
 /// Base exception class for exceptions that occurred in the domain.

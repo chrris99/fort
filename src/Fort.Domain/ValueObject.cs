@@ -1,4 +1,4 @@
-namespace Fort.Core;
+namespace Fort.Domain;
 
 /// <summary>
 /// Abstract base class for value objects.
@@ -26,16 +26,6 @@ public abstract class ValueObject : IEquatable<ValueObject>
         return other is not null && GetValues().SequenceEqual(other.GetValues());
     }
 
-    public static bool operator ==(ValueObject? a, ValueObject? b)
-    {
-        if (a is null && b is null) return true;
-        if (a is null || b is null) return false;
-
-        return a.Equals(b);
-    }
-
-    public static bool operator !=(ValueObject? a, ValueObject? b) => !(a == b);
-
     /// <inheritdoc />
     public override int GetHashCode()
     {
@@ -48,4 +38,14 @@ public abstract class ValueObject : IEquatable<ValueObject>
 
         return hashCode.ToHashCode();
     }
+    
+    public static bool operator ==(ValueObject? a, ValueObject? b)
+    {
+        if (a is null && b is null) return true;
+        if (a is null || b is null) return false;
+
+        return a.Equals(b);
+    }
+
+    public static bool operator !=(ValueObject? a, ValueObject? b) => !(a == b);
 }

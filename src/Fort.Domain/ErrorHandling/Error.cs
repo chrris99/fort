@@ -1,4 +1,4 @@
-﻿namespace Fort.Core;
+﻿namespace Fort.Domain.ErrorHandling;
 
 /// <summary>
 /// Represents a domain error object.

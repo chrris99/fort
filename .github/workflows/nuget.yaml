@@ -16,10 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Setup .NET 6
+      - name: Setup .NET 7
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: '7.0.x'
 
       - name: Get Nuget Version
         run: echo "APP_VERSION=`git describe --tags`" >> $GITHUB_ENV
@@ -41,4 +41,4 @@ jobs:
         run: ls ./nuget-packages
 
       - name: Publish
-        run: dotnet nuget push nuget-packages/*.* --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate true --source https://api.nuget.org/v3/index.json 
+        run: dotnet nuget push nuget-packages/*.nupkg  --api-key ${{ secrets.NUGET_API_KEY }} --source "github"
